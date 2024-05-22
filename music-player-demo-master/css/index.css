@@ -15,6 +15,7 @@ body {
 }
 
 .player-warp {
+  display: inline-block;
   position: relative;
 }
 
