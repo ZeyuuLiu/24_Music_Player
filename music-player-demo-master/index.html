@@ -11,72 +11,236 @@
     <link rel="stylesheet" href="./css/edgeindex.css">
   </head>
   <body>
+    
+    <div class="content">
+      <div class="menu-box">
+          <!-- 展示与隐藏侧边栏 开始-->
+          <input type="checkbox" id="menu-btn">
+          <label for="menu-btn"><i class="iconfont icon-yemianfanhui"></i></label>
+          <!-- 展示与隐藏侧边栏 结束-->
+          <div class="menu">
+              <!-- 侧边栏的标题 开始-->
+              <div class="menu-title">
+                  <h1>Menu</h1>
+              </div>
+              <!-- 侧边栏的标题 结束-->
+
+              <!-- 每一项导航 -->
+              <div class="menu-item">
+                  <input type="checkbox" id="menu-item1">
+                  <label for="menu-item1">
+                      <i class="menu-item-icon iconfont icon-a-01-shujuzhongxin"></i>
+                      <span>recommends</span>
+                      <i class="menu-item-last iconfont icon-down"></i>
+                  </label>
+                  <div class="menu-content">
+                     <div class="recommends-part">
+                      <div class="recommends-list">
+                        <div class="box">
+                          <div class="img"><img src="../images/p(1).jpg" alt="picture1"></div>
+                          
+                          <div class="text">
+                            <div>
+                            <h2>
+                              图片1
+                            </h2>
+                            <p>
+                              博士，还有许多工作需要处理噢
+                            </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box">
+                          <div class="img"><img src="../images/p(2).jpg" alt="picture2"></div>
+                          <div class="text">
+                            <div>
+                              <h2>
+                                图片2
+                              </h2>
+                              <p>
+                                如果遮蔽道路的黑暗没有尽头，就用灯火点亮星辰
+                              </p>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <div class="box">
+                          <div class="img"><img src="../images/p(3).jpg" alt="picture3"></div>
+                          <div class="text">
+                            <div>
+                            <h2>
+                              图片3
+                            </h2>
+                            <p>
+                              泰拉，晚安
+                            </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box">
+                          <div class="img"><img src="../images/p(1).jpg" alt="picture1"></div>
+                          
+                          <div class="text">
+                            <div>
+                            <h2>
+                              图片1
+                            </h2>
+                            <p>
+                              博士，还有许多工作需要处理噢
+                            </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box">
+                          <div class="img"><img src="../images/p(2).jpg" alt="picture2"></div>
+                          <div class="text">
+                            <div>
+                              <h2>
+                                图片2
+                              </h2>
+                              <p>
+                                如果遮蔽道路的黑暗没有尽头，就用灯火点亮星辰
+                              </p>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <div class="box">
+                          <div class="img"><img src="../images/p(3).jpg" alt="picture3"></div>
+                          <div class="text">
+                            <div>
+                            <h2>
+                              图片3
+                            </h2>
+                            <p>
+                              泰拉，晚安
+                            </p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                     </div>
+                     </div>
+                  </div>
+              </div>
+
+              <div class="menu-item">
+                  <input type="checkbox" id="menu-item2">
+                  <label for="menu-item2">
+                      <i class="menu-item-icon iconfont icon-a-02-kechengguanli"></i>
+                      <span>likes</span>
+                      <i class="menu-item-last iconfont icon-down"></i>
+                  </label>
+                  <div class="menu-content">
+                      <span>likesong#0</span>
+                      <span>likesong#1</span>
+                  </div>
+              </div>
+
+              <div class="menu-item">
+                  <input type="checkbox" id="menu-item3">
+                  <label for="menu-item3">
+                      <i class="menu-item-icon iconfont icon-a-04-zixunfabu"></i>
+                      <span>songs list</span>
+                      <i class="menu-item-last iconfont icon-down"></i>
+                  </label>
+                  <div class="menu-content">
+                      <span>empty</span>
+                      <span>method 1</span>
+                      <span>method 2</span>
+                  </div>
+              </div>
+
+              <div class="set-line"></div>
+
+              <div class="menu-item">
+                  <label>
+                      <i class="menu-item-icon iconfont icon-a-08-shezhi"></i>
+                      <span>option</span>
+                  </label>
+              </div>
+          </div>
+      </div>
+  </div>
     <!-- 音乐播放器 -->
-    <div class="player-warp">
-      <!-- 歌曲信息卡片 -->
-      <div class="player-info">
-        <div class="info">
-          <div class="name">我记得</div>
-          <div class="singer-album">赵雷 - 署前街少年</div>
-          <!-- 进度条 -->
-          <div class="music_progress">
-            <div class="music_progress_top">
-              <span class="current-time">00:00</span>
-              <span class="time">05:29</span>
-            </div>
-            <div class="music_progress_bar">
-              <div class="music_progress_line"></div>
+    <div class="rightedge">
+      <div class="container">
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Songs to search">
+            <a href="#" class="search-btn">
+                <div class="search-ico">
+                    <embed src="../svg/search.svg" type="image/svg+xml" />
+                </div>
+            </a>
+        </div>
+      </div>
+      <div class="player-warp">
+       
+        <!-- 歌曲信息卡片 -->
+        <div class="player-info">
+          <div class="info">
+            <div class="name">我记得</div>
+            <div class="singer-album">赵雷 - 署前街少年</div>
+            <!-- 进度条 -->
+            <div class="music_progress">
+              <div class="music_progress_top">
+                <span class="current-time">00:00</span>
+                <span class="time">05:29</span>
+              </div>
+              <div class="music_progress_bar">
+                <div class="music_progress_line"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- 音乐控制器 -->
-      <div class="player-control">
-        <!-- 封面唱片 -->
-        <div class="cover">
-          <img
-            src="http://p1.music.126.net/FCWD6ibS2JK2B3QAnXuzwQ==/109951167805892385.jpg?param=300x300"
-            alt="封面"
-          />
+        <!-- 音乐控制器 -->
+        <div class="player-control">
+          <!-- 封面唱片 -->
+          <div class="cover">
+            <img
+              src="http://p1.music.126.net/FCWD6ibS2JK2B3QAnXuzwQ==/109951167805892385.jpg?param=300x300"
+              alt="封面"
+            />
+          </div>
+          <!-- 控制按钮 -->
+          <div class="control">
+            <i id="prevBtn" class="fa fa-step-backward"></i>
+            <i id="playBtn" class="fa fa-play"></i>
+            <i id="nextBtn" class="fa fa-step-forward"></i>
+            <i id="openModal" class="fa fa-reorder"></i>
+          </div>
         </div>
-        <!-- 控制按钮 -->
-        <div class="control">
-          <i id="prevBtn" class="fa fa-step-backward"></i>
-          <i id="playBtn" class="fa fa-play"></i>
-          <i id="nextBtn" class="fa fa-step-forward"></i>
-          <i id="openModal" class="fa fa-reorder"></i>
+      </div>
+      
+      <!-- 页面背景 -->
+      <div class="mask_bg"></div>
+  
+      <!-- 模态框 -->
+      <div class="modal">
+        <div class="modal-box">
+          <div class="modal-box-top">
+            <div class="modal-title">音乐列表</div>
+            <div class="modal-close">
+              <i class="fa fa-remove"></i>
+            </div>
+          </div>
+          <div class="modal-wrapper">
+            <ul class="music-list">
+              <!-- <li>
+                <span>01. 我记得 - 赵雷</span>
+                <span class="fa fa-play-circle play-circle"></span>
+              </li> -->
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    
+   
+
+
     <audio src=""></audio>
 
     <script src="./js/jquery.js"></script>
     <script src="./js/index.js"></script>
   </body>
-  
-    <!-- 页面背景 -->
-    <div class="mask_bg"></div>
-
-    <!-- 模态框 -->
-    <div class="modal">
-      <div class="modal-box">
-        <div class="modal-box-top">
-          <div class="modal-title">音乐列表</div>
-          <div class="modal-close">
-            <i class="fa fa-remove"></i>
-          </div>
-        </div>
-        <div class="modal-wrapper">
-          <ul class="music-list">
-            <!-- <li>
-              <span>01. 我记得 - 赵雷</span>
-              <span class="fa fa-play-circle play-circle"></span>
-            </li> -->
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    
 </html>

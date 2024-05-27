@@ -91,15 +91,17 @@ $("#nextBtn").on("click", function () {
 
 // 给音乐列表绑定点击事件
 $("#openModal").on("click", function () {
-  $(".modal").css({
-    display: "block",
-  });
+  $(".modal").show();
+  $(".modal").css(
+    "left","0"
+  );
 });
 
 $(".modal-close").on("click", function () {
-  $(".modal").css({
-    display: "none",
-  });
+  $(".modal").css("left", "25%"); // 将 modal 平移到屏幕右侧
+  setTimeout(function () {
+    $(".modal").hide(); // 隐藏 modal
+  }, 500); // 延迟隐藏，等待过渡效果完成
 });
 
 // 监听audio标签的 timeupdate 事件
@@ -127,7 +129,7 @@ $("audio").on("ended", function () {
 });
 
 // 通过事件委托给音乐列表的播放按钮绑定点击事件
-$(".music-list").on("click", ".play-circle", function () {
+$(".music-list").on("click", {".play-circle"}, function () {
   if ($(this).hasClass("fa-play-circle")) {
     var index = $(this).attr("data-index");
     currentIndex = index;
