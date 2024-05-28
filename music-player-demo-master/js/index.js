@@ -98,7 +98,7 @@ $("#openModal").on("click", function () {
 });
 
 $(".modal-close").on("click", function () {
-  $(".modal").css("left", "25%"); // 将 modal 平移到屏幕右侧
+  $(".modal").css("left", "100%"); // 将 modal 平移到屏幕右侧
   setTimeout(function () {
     $(".modal").hide(); // 隐藏 modal
   }, 500); // 延迟隐藏，等待过渡效果完成
@@ -129,7 +129,7 @@ $("audio").on("ended", function () {
 });
 
 // 通过事件委托给音乐列表的播放按钮绑定点击事件
-$(".music-list").on("click", {".play-circle"}, function () {
+$(".music-list").on("click", ".play-circle", function () {
   if ($(this).hasClass("fa-play-circle")) {
     var index = $(this).attr("data-index");
     currentIndex = index;

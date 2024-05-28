@@ -7,7 +7,7 @@
 :root {
     --color-menu-bg: #fff;
     --font-color-mi: #000;
-    --font-color-mi-hover: #1890ff;
+    --font-color-mi-hover: #ab0202;
     --color-bg-mi-hover: #ececec;
     --border-radius-mi: 2px;
     --transition-menu-time: 0.2s;
@@ -108,11 +108,13 @@
     border-radius: var(--border-radius-mi);
     display: flex;
     align-items: center;
+    border-radius: 10px;
 }
 
 .menu-item>label:hover {
     color: var(--font-color-mi-hover);
     cursor:pointer;
+    background-color: #ececec;
 }
 
 .menu-item>label>i:first-child {
@@ -175,6 +177,12 @@
     color: var(--font-color-mi-hover);
 }
 
+.menu-content h2{
+    font-size: 35px;
+}
+.menu-content p{
+    font-size: 15px;
+}
 .set-line {
     margin: 10px 0 40px 0;
     width: 100%;
@@ -182,7 +190,7 @@
     background-color: var(--color-line-bg);
 }
 .recommends-part{
-    margin:50px auto;
+    margin-top:30px;
     background-color: #d3d3d3;
     height:50%;
     width:400%;
