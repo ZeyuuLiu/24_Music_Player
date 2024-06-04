@@ -174,16 +174,6 @@
   </div>
     <!-- 音乐播放器 -->
     <div class="rightedge">
-      <div class="container">
-        <div class="search-box">
-            <input type="text" class="search-input" placeholder="Songs to search">
-            <a href="#" class="search-btn">
-                <div class="search-ico">
-                    <embed src="../svg/search.svg" type="image/svg+xml" />
-                </div>
-            </a>
-        </div>
-      </div>
       <div class="player-warp">
        
         <!-- 歌曲信息卡片 -->
@@ -236,7 +226,12 @@
             </div>
           </div>
           <div class="modal-wrapper">
-            <ul class="music-list">
+            <div class="search">
+              <div class="imgs"><img src="../images/搜索.png" alt="search"></div>
+              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="搜索..">
+            </div>
+            
+            <ul class="music-list" id="myUL">
               <!-- <li>
                 <span>01. 我记得 - 赵雷</span>
                 <span class="fa fa-play-circle play-circle"></span>

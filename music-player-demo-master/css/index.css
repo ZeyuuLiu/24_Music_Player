@@ -14,13 +14,10 @@ body {
   user-select: none;
 }
 .rightedge{
-  flex:auto;
   width:100%;
   height:100%;
   display: flex;
-  align-items: center;
-  flex-direction:column;
-  user-select: none;
+  justify-content: center;
 }
 .player-warp {
   display: flex;
@@ -28,6 +25,7 @@ body {
   align-items: center;
   flex-direction: column;
   position:relative;
+  height:100px;
 }
 .player-info {
   flex:auto;
@@ -227,7 +225,41 @@ body {
   height: calc(100% - 40px);
   overflow-y: auto;
 }
+.search{
+  width:100%;
+  height:5%;
+  display:flex;
+  background-color:gainsboro;
+  border-radius: 20px;
+}
 
+.search .imgs{
+  width: 10%;
+  height:60%;
+  margin-left: 5px;
+  margin-top:6px;
+  margin-bottom: 12px;
+  margin-right: 5px;
+}
+.search .imgs img{
+  width:100%;
+  height:100%;
+  
+}
+#myInput {
+  width:90%;
+  padding-top: 12px;
+  background-position: 10px 12px; /* 定位搜索按钮 */
+  background-repeat: no-repeat; /* 图片不重复 */
+  width: 80%; /* 全屏幕显示 */
+  font-size: 16px; /* 字体大小 */
+  padding: 12px 5px 12px 5px; /* 设置内边距 */
+  border: 2px solid #ab0202; 
+  margin-bottom: 12px; /* 添加顶部的外边距 */
+  margin-top: 6px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
 .modal-wrapper .music-list {
   list-style: none;
 }
@@ -239,14 +271,17 @@ body {
   justify-content: space-between;
   align-items: center;
   transition: 0.3s;
-  border-radius: 6px;
+  border-radius: 10px;
+  font-size: 13px;
 }
 .music-list li:hover,.music-list li:focus{
+  font-size: 16px;
   color: #ab0202;
   background-color:#cccaca;
 }
 .play-circle {
   font-size: 30px;
+  margin-left:10px;
   margin-right: 20px;
   transition: transform 0.4s;
   cursor: pointer;
@@ -267,64 +302,4 @@ body {
   100% {
     transform: rotate(360deg);
   }
-}
-
-
-.container {
-  flex:0;
-  margin-top: 100px;
-  margin-bottom:375px;
-  position: relative;
-  left:40%;
-  transform: translate(-50%, -50%);
-}
-.search-box {
-  position: relative;
-  background: #ede7e1;
-  height: 60px;
-  border-radius: 40px;
-  padding: 10px;
-}
-.search-input {
-  position: relative;
-  border: none;
-  background: none;
-  outline: none;
-  color: rgb(0, 0, 0);
-  font-size: 22px;
-  line-height: 40px;
-  height: 40px;
-  width: 0px;
-  transition: .5s;
-  padding: 0px 40px 0 0;
-}
-.search-box:hover .search-input {
-  width: 475px;
-  font-size: 14px;
-
-}
-.search-box:hover .search-btn {
-  background: white;
-  color:#757474;
-}
-.search-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  text-decoration: none;
-  color: #e74c3c;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #fcfcff;
-  transition: .5s;
-}
-.search-ico {
-  margin: 12px;
-  width: 16px;
-  height: 16px;
-}
-.search-ico>embed {
-  width:90%;
-  height: 90%;
 }

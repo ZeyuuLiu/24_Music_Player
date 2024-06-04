@@ -29,6 +29,7 @@
 .content {
     min-height: 50vh;
     flex:0;
+    z-index: 2;
 }
 
 .menu-box {
