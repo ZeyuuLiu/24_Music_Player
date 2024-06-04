@@ -25,7 +25,6 @@ body {
   align-items: center;
   flex-direction: column;
   position:relative;
-  height:100px;
 }
 .player-info {
   flex:auto;
@@ -222,8 +221,9 @@ body {
 
 .modal-box .modal-wrapper {
   width: 100%;
-  height: calc(100% - 40px);
+  height: 75%;
   overflow-y: auto;
+  margin-top: 30px;
 }
 .search{
   width:100%;
@@ -234,8 +234,8 @@ body {
 }
 
 .search .imgs{
-  width: 10%;
-  height:60%;
+  width: 20px;
+  height:20px;
   margin-left: 5px;
   margin-top:6px;
   margin-bottom: 12px;
@@ -247,21 +247,22 @@ body {
   
 }
 #myInput {
-  width:90%;
+  width:80%;
   padding-top: 12px;
   background-position: 10px 12px; /* 定位搜索按钮 */
   background-repeat: no-repeat; /* 图片不重复 */
-  width: 80%; /* 全屏幕显示 */
+  width: 90%; /* 全屏幕显示 */
   font-size: 16px; /* 字体大小 */
   padding: 12px 5px 12px 5px; /* 设置内边距 */
   border: 2px solid #ab0202; 
   margin-bottom: 12px; /* 添加顶部的外边距 */
-  margin-top: 6px;
+  margin-top: 3px;
   border-radius: 15px;
   transition: 0.3s;
 }
 .modal-wrapper .music-list {
   list-style: none;
+  margin-top: 10px;
 }
 
 .music-list li {
@@ -271,7 +272,7 @@ body {
   justify-content: space-between;
   align-items: center;
   transition: 0.3s;
-  border-radius: 10px;
+  border-radius: 15px;
   font-size: 13px;
 }
 .music-list li:hover,.music-list li:focus{
