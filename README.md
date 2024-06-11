@@ -26,7 +26,7 @@
 ## 安装与使用
 
 - **克隆仓库**：
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/ZeyuuLiu/24--
    
 - **进入项目目录**：
    cd your-repo-name
@@ -48,6 +48,6 @@
 
 ## 联系信息
 如有任何问题或建议，欢迎通过以下方式联系我：
--GitHub: yourusername
--Email: your.email@example.com
-感谢您使用我们的音乐播放器！希望您能享受愉快的音乐体验！
+- GitHub: yourusername
+- Email: your.email@example.com
+- 感谢您使用我们的音乐播放器！希望您能享受愉快的音乐体验！
