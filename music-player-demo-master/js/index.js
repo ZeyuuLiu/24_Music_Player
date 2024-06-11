@@ -12,6 +12,7 @@ $.ajax({
     musicList = data;
     render(musicList[currentIndex]);
     renderMusicList(musicList);
+    renderLikeList(musicList);
   },
 });
 
@@ -60,7 +61,16 @@ $("#playBtn").on("click", function () {
 
   // 重新渲染列表数据
   renderMusicList(musicList);
+  renderLikeList(musicList);
 });
+
+// 给喜欢按钮绑定点击事件
+$("#likeBtn").on("click",function(){
+  if(musicList[currentIndex].like=="#b3b0b0")musicList[currentIndex].like="red";
+  else musicList[currentIndex].like="#b3b0b0";
+  $(".fa-unlike").css({ color: musicList[currentIndex].like });
+  renderLikeList(musicList);
+})
 
 // 给上一首按钮绑定点击事件
 $("#prevBtn").on("click", function () {
@@ -96,6 +106,11 @@ $("#openModal").on("click", function () {
     "left","0"
   );
 });
+// 给清空喜欢列表绑定点击事件
+$(".clear-like").on("click",function(){
+  clear(musicList);
+})
+
 
 $(".modal-close").on("click", function () {
   $(".modal").css("left", "100%"); // 将 modal 平移到屏幕右侧
@@ -139,6 +154,17 @@ $(".music-list").on("click", ".play-circle", function () {
     $("#playBtn").trigger("click");
   }
 });
+// 通过事件委托给喜欢列表的播放按钮绑定点击事件
+$(".like-list").on("click", ".play-circle", function () {
+  if ($(this).hasClass("fa-play-circle")) {
+    var index = $(this).attr("data-index");
+    currentIndex = index;
+    render(musicList[currentIndex]);
+    $("#playBtn").trigger("click");
+  } else {
+    $("#playBtn").trigger("click");
+  }
+});
 
 // 格式化时间
 function formatTime(time) {
@@ -158,9 +184,7 @@ function render(data) {
   $(".time").text(data.time);
   $(".cover img").attr("src", data.cover);
   $("audio").attr("src", data.audio_url);
-  $(".mask_bg").css({
-    background: `url("${data.cover}") no-repeat center center`,
-  });
+  $(".fa-unlike").css({ color: data.like });
 }
 
 // 根据音乐列表数据，创建li
@@ -181,7 +205,45 @@ function renderMusicList(list) {
     $(".music-list").append($li);
   });
 }
+// 根据喜欢的音乐，创建li
+function renderLikeList(list){
+  $(".like-list").empty();
 
+  var empty=true;
+  $.each(list, function (index, item) {
+    if(list[index].like == "red"){
+      empty=false;
+      var $li = $(`
+      <li class="${index == currentIndex ? "playing" : "notplaying"}">
+      <span>${item.name} - ${item.singer}</span>
+      <span data-index="${index}" class="fa ${
+        index == currentIndex && !$("audio").get(0).paused
+        ? "fa-pause-circle"
+        : "fa-play-circle"
+      } play-circle"></span>
+      </li>
+      `);
+      $(".like-list").append($li);
+    }
+  });
+  if(empty){
+    var $li = $(`
+      <li class="list-empty">
+      喜欢列表为空，添加喜欢的音乐
+      </li>
+      `);
+      $(".like-list").append($li);
+  }
+}
+
+// 清空喜欢列表
+function clear(list){
+  $.each(list, function (index, item) {
+    list[index].like = "#b3b0b0";
+  })
+  $(".fa-unlike").css({ color: "#b3b0b0" });
+  renderLikeList(list);
+}
 
 //新添加的函数
 function myFunction() {

@@ -3,6 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+/*浅色主题*/
+:root{
+  --color-main:#fff;
+  --color-divide:#ab0202;
+  --color-hover-front:#b3b3b0;
+  --color-hover-back:black;
+  --color-background-first:#ccccca;
+  --color-background-second:#ccccca;
+  --color-hover:#ab0202;
+}
+/*深色主题*/
+.dark-theme{
+  --color-main:#232324;
+  --color-divide:#9269de;
+  --color-hover-front:rgba(255, 255, 255, 0.628);
+  --color-hover-back:#e7e7e7;
+  /* --color-background-first:#a5c9f8; */
+  --color-background-first:grey;
+
+  /* --color-background-second:#3e32f2; */
+  --color-background-second:lightblue;
+  --color-hover:rgb(0,0,0);
+} 
+
+body {
+  background-color: var(--color-menu-bg);
+  color: var(--font-color-mi);
+  transition: background-color var(--transition-menu-time), color var(--transition-menu-time) ;
+}
 
 body {
   height: 100vh;
@@ -10,35 +39,41 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background-color: #b3b0b0;
+  background-color: var(--color-main);
   user-select: none;
 }
 .rightedge{
   width:100%;
   height:100%;
-  display: flex;
+  display:inline-block;
   justify-content: center;
 }
 .player-warp {
+  width: 360px;
+  height:80px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position:relative;
+  top:50%;
+  left:40%;
 }
+  
+  
 .player-info {
   flex:auto;
   display:flex;
   justify-self:right;
   align-items:end;
   flex-direction: column;
-  position :relative;
+  position:relative;
 }
 .player-warp .player-control {
   width: 360px;
   height: 80px;
   padding: 20px 30px;
-  background-color: #fff;
+  background-color: var(--color-main);
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
@@ -49,7 +84,7 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--color-main);
   margin-top: -60px;
   padding: 6px;
   position: relative;
@@ -67,7 +102,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: var(--color-main);
 }
 
 .cover img {
@@ -88,7 +123,7 @@ body {
   text-align: center;
   line-height: 40px;
   font-size: 26px;
-  color: #b3b0b0;
+  color: var(--color-hover-front);
   cursor: pointer;
   transition: all 0.4s;
 }
@@ -96,7 +131,7 @@ body {
 .control i:hover {
   border-radius: 6px;
   background-color: rgba(71, 70, 70, 0.2);
-  color: #fff;
+  color:var(--color-hover-back);
 }
 
 .player-warp .player-info {
@@ -148,7 +183,7 @@ body {
 .music_progress .music_progress_bar {
   width: 100%;
   height: 3px;
-  background-color: #cccaca;
+  background-color: var(--color-background-first);
   border-radius: 10px;
   margin-top: 3px;
 }
@@ -166,16 +201,12 @@ body {
   z-index: -2;
   width: 100%;
   height: 100%;
-  background: url("http://p1.music.126.net/FCWD6ibS2JK2B3QAnXuzwQ==/109951167805892385.jpg")
-    no-repeat center center;
-  background-size: cover;
-  /* 模糊 */
-  filter: blur(50px);
   transition: all 1s;
 }
 
 /* 模态框 */
 .modal {
+  color: var(--color-hover-back);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   width: 100%;
   height: 100%;
@@ -190,7 +221,7 @@ body {
   width: 25%;
   height: 100%;
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--color-main);
   position: absolute;
   top: 0;
   right: 0;
@@ -212,7 +243,7 @@ body {
 .modal-box-top .modal-close {
   font-size: 20px;
   cursor: pointer;
-  transition: transform 0.4s;
+  transition:0.4s;
 }
 
 .modal-box-top .modal-close:hover {
@@ -229,7 +260,7 @@ body {
   width:100%;
   height:5%;
   display:flex;
-  background-color:gainsboro;
+  background-color:var(--color-background-first);
   border-radius: 20px;
 }
 
@@ -254,7 +285,7 @@ body {
   width: 90%; /* 全屏幕显示 */
   font-size: 16px; /* 字体大小 */
   padding: 12px 5px 12px 5px; /* 设置内边距 */
-  border: 2px solid #ab0202; 
+  border: 2px solid var(--color-divide); 
   margin-bottom: 12px; /* 添加顶部的外边距 */
   margin-top: 3px;
   border-radius: 15px;
@@ -277,8 +308,8 @@ body {
 }
 .music-list li:hover,.music-list li:focus{
   font-size: 16px;
-  color: #ab0202;
-  background-color:#cccaca;
+  color: var(--color-hover);
+  background-image:radial-gradient(var(--color-background-second),var(--color-background-first))
 }
 .play-circle {
   font-size: 30px;
@@ -293,7 +324,7 @@ body {
 }
 
 .playing {
-  color: black;
+  color: var(--color-hover-back);
 }
 
 @keyframes zhuan {

@@ -9,28 +9,52 @@
     --font-color-mi: #000;
     --font-color-mi-hover: #ab0202;
     --color-bg-mi-hover: #ececec;
-    --border-radius-mi: 2px;
+    --border-radius-mi: 15px;
     --transition-menu-time: 0.2s;
     --color-line-bg: #d3d3d3;
+    --button-width:50px;
+    --button-height:29px;
+    --toggle-diameter:25px;
+    --button-toggle-offset:calc((var(--button-height) - var(--toggle-diameter)) / 2);
+    --toggle-shadow-offset:2px;
+    --toggle-wider:33.3px;
+    --color-grey:#E9E9E9;
+    --color-red:#ab0202;
 }
 
-/*黑色主题，使用时把上面的白色主题注释掉，启用下面的css代码*/
-/* :root {
+/* 黑色主题 */
+.dark-theme {
     --color-bg: #e7e7e7;
     --color-menu-bg: #232324;
     --font-color-mi: #c9cdd4;
-    --font-color-mi-hover: #a649d1;
+    --font-color-mi-hover: #a5c9f8;
     --color-bg-mi-hover: #303030;
     --border-radius-mi: 2px;
     --transition-menu-time: 0.2s;
     --color-line-bg: #333333;
-} */
+    --button-width:50px;
+    --button-height:29px;
+    --toggle-diameter:25px;
+    --button-toggle-offset:calc((var(--button-height) - var(--toggle-diameter)) / 2);
+    --toggle-shadow-offset:2px;
+    --toggle-wider:33.3px;
+    --color-grey:#1E1E1C;
+    --color-red:#a5c9f8;
+}
+/* 为实现主题切换创建 */
+body {
+    background-color: var(--color-menu-bg);
+    color: var(--font-color-mi);
+    transition: background-color var(--transition-menu-time), color var(--transition-menu-time);
+}
+
 
 .content {
     min-height: 50vh;
     flex:0;
     z-index: 2;
 }
+
 
 .menu-box {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -66,11 +90,12 @@
     overflow: hidden;
 }
 
+
 .menu-box>label>i {
     font-weight: 900;
     text-indent: -3px;
     font-size: 20px;
-    transition: transform var(--transition-menu-time);
+    transition:var(--transition-menu-time);
     transform: rotate(0deg);
 }
 
@@ -78,14 +103,16 @@
     box-shadow: 0px 0px 2px 0px #000;
     color: var(--font-color-mi-hover);
 }
-
-.menu-box>input#menu-btn:checked+label>i {
+.menu-box>input#menu-btn:hover+label>i {
     transform: rotate(180deg);
+}
+.menu-box>input#menu-btn:checked+label>i {
+    transform: rotate(0deg);
 }
 
 .menu {
     font-size: 18px;
-    width: 325px;
+    width: 0px;
     min-height: 100%;
     cursor: pointer;
     overflow: hidden;
@@ -94,7 +121,7 @@
 }
 
 .menu-box>input#menu-btn:checked~.menu {
-    width: 0;
+    width: 325px;
 }
 
 .menu-title {
@@ -115,7 +142,7 @@
 .menu-item>label:hover {
     color: var(--font-color-mi-hover);
     cursor:pointer;
-    background-color: #ececec;
+    background-color: var(--color-bg-mi-hover);
 }
 
 .menu-item>label>i:first-child {
@@ -133,10 +160,9 @@
     font-size: 20px;
     font-weight: 900;
     transform: rotate(0deg);
-    transition: transform var(--transition-menu-time);
+    transition:var(--transition-menu-time);
    
 }
-
 .menu-item>input:checked+label>i:last-child {
     transform: rotate(180deg);
 }
@@ -144,7 +170,7 @@
 .menu-content {
     height: 0;
     overflow: hidden;
-    transition: height var(--transition-menu-time);
+    transition:var(--transition-menu-time);
     display: flex;
     flex-wrap: wrap;
     background-color: var(--color-menu-bg);
@@ -157,7 +183,7 @@
 }
 
 .menu-item>input#menu-item2:checked~.menu-content {
-    height: calc(2 * 40px);
+    height: calc(4 * 40px);
 }
 
 .menu-item>input#menu-item3:checked~.menu-content {
@@ -169,10 +195,91 @@
     text-indent: 20px;
     line-height: 40px;
     border-radius: var(--border-radius-mi);
-    border-radius: 15px;
-   
+    display: flex;
+    align-items: center;
 }
-
+label{
+    display: flex;
+    align-items: center;
+}
+.button-blur{
+    display: inline-block;
+    width: var(--button-width);
+    height: var(--button-height);
+    background-color: var(--color-grey);
+    border-radius: calc(var(--button-height) / 2);
+    position: relative;
+    margin-left: 50px;
+    transition: 0.2s all ease-in-out;
+}
+.container-button{
+    display: flex;
+    align-items: center;
+}
+.button-blur::after{
+    content:'';
+    display:block;
+    width: var(--toggle-diameter);
+    height: var(--toggle-diameter);
+    background-color: #fff;
+    border-radius: calc(var(--toggle-diameter) / 2);
+    position: absolute;
+    top: var(--button-toggle-offset);
+    transform: translateX(var(--button-toggle-offset));
+    box-shadow:var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.3);
+    transition: 0.2s all ease-in-out;
+}
+.button-mode{
+    display: inline-block;
+    width: var(--button-width);
+    height: var(--button-height);
+    background-color: var(--color-grey);
+    border-radius: calc(var(--button-height) / 2);
+    position: relative;
+    margin-left: 100px;
+    transition: 0.2s all ease-in-out;
+}
+.container-background-button{
+    display: flex;
+    align-items: center;
+}
+.button-mode::after{
+    content:'';
+    display:block;
+    width: var(--toggle-diameter);
+    height: var(--toggle-diameter);
+    background-color: #fff;
+    border-radius: calc(var(--toggle-diameter) / 2);
+    position: absolute;
+    top: var(--button-toggle-offset);
+    transform: translateX(var(--button-toggle-offset));
+    box-shadow:var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.3);
+    transition: 0.2s all ease-in-out;
+}
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"]:checked + span{
+    background-color: var(--color-red);
+}
+input[type="checkbox"]:checked + span::after {
+    transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
+    box-shadow:calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.3);
+}
+input[type="checkbox"]:active + span::after {
+    width:var(--toggle-wider);
+}
+input[type="checkbox"]:checked:active + span::after {
+    transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
+}
+@media(prefers-color-scheme: dark) {
+    .button-blur{
+        background-color: var(--color-dark-grey);
+    }
+    .button-mode{
+        background-color: var(--color-dark-grey);
+    }
+}
 .menu-content>span:hover {
     background-color: var(--color-bg-mi-hover);
     color: var(--font-color-mi-hover);
@@ -184,6 +291,49 @@
 .menu-content p{
     font-size: 15px;
 }
+
+/* 为喜欢列表的歌曲设置格式 */
+#like{
+    overflow: auto;
+}
+
+.like-list{
+    width: 100%;  
+    padding: 0;  
+    margin: 0;
+}
+.playing,.notplaying {
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(186, 182, 182);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    border-radius: 6px;
+}
+.playing:hover,.playing:focus,.notplaying:hover,.notplaying:focus{
+    color: #ab0202;
+    background-color:#cccaca;
+}
+@keyframes swing {  
+    0% { transform: rotate(0deg); }  
+    10% { transform: rotate(10deg); }  
+    30% { transform: rotate(0deg); }  
+    40% { transform: rotate(-10deg); }  
+    50% { transform: rotate(0deg); }  
+    100% { transform: rotate(0deg); }  
+}
+.list-empty{
+    text-align: center;
+    height: 100px;
+    width: 300px;
+    line-height: 100px;
+    animation: swing 2s ease-in-out infinite;
+    padding: 10px 0;
+    color:#d3d3d3;
+    font-weight: 600;
+}
+
 .set-line {
     margin: 10px 0 40px 0;
     width: 100%;
@@ -265,7 +415,7 @@
 .box .text h2{
     font-size: 15px;
     margin-bottom: 10px;
-    transform: translateY(200px);
+    transform: translateY(300px);
     transition: 1s;
 }
 .box:hover .text h2{
@@ -275,7 +425,7 @@
 .box .text p{
     font-size: 10px;
     margin-bottom: 20px;
-    transform: translateY(200px);
+    transform: translateY(300px);
     transition: 1s;
     }
 .box:hover .text p{

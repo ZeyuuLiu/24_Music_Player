@@ -1,0 +1,55 @@
+
+.mask_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.bg_video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    
+    filter:blur(50px);
+    z-index: -1; /* 确保视频在背景层 */
+}
+
+/* #bgvideo{
+    
+} */
+
+.controls {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1; /* 确保按钮在视频之上 */
+  }
+
+.control_button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: yellow;
+    border: none;
+    cursor: pointer;
+}
+
+.control_button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.blurred {
+    filter: blur(50px);
+    transition: all 1s;
+}
