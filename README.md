@@ -17,8 +17,6 @@
   - CSS
   - JavaScript
   - jQuery
-- **后端**：
-  - Node.js (可选)
 - **工具**：
   - Git
   - GitHub
