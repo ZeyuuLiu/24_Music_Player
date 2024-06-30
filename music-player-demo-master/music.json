@@ -9,12 +9,183 @@
     "like":"#b3b0b0"
   },
   {
+    "name":"前前前世",
+    "audio_url":"./audios/前前前世.mp3",
+    "singer":"RADWIMPS",
+    "album": "君の名は",
+    "cover": "./MV/前前前世.jpg",
+    "time": "04:52",
+    "like":"#b3b0b0"
+  },
+  {
+    "name":"Rain",
+    "audio_url":"./audios/言叶之庭.mp3",
+    "singer":"秦基博 (はたもとひろ)",
+    "album": "言ノ葉",
+    "cover": "./MV/言叶之庭.jpg",
+    "time": "04:31",
+    "like":"#b3b0b0"
+  },
+  {
+    "name":"Bad Apple",
+    "audio_url":"./audios/Bad Apple.mp3",
+    "singer":"nomico (のみこ)",
+    "album": "Lovelight",
+    "cover": "./MV/Bad Apple.jpg",
+    "time": "03:39",
+    "like":"#b3b0b0"
+  },
+  {
+    "name":"COLORs",
+    "audio_url":"./audios/Colors.mp3",
+    "singer":"泽野弘之·秦基博",
+    "album": "WIT STUDIO",
+    "cover": "./MV/Colors.jpg",
+    "time": "03:06",
+    "like":"#b3b0b0"
+  },
+  {
+    "name":"LOSER",
+    "audio_url":"./audios/LOSER.mp3",
+    "singer":"米津玄師",
+    "album": "LOSER / ナンバーナイン",
+    "cover": "./MV/LOSER.jpg",
+    "time": "04:02",
+    "like":"#b3b0b0"
+  },
+  {
+    "name":"One Last Kiss",
+    "audio_url":"./audios/One Last Kiss.mp3",
+    "singer":"宇多田光",
+    "album": "One Last Kiss",
+    "cover": "./MV/One Last Kiss.jpg",
+    "time": "04:12",
+    "like":"#b3b0b0"
+  },
+  {
     "name":"YOKU",
     "audio_url":"./audios/YOKU.mp3",
     "singer":"Eve",
-    "album": "KATE欲コレクション",
+    "album": "廻人",
     "cover": "./MV/YOKU.jpg",
     "time": "02:46",
     "like":"#b3b0b0"
+  },
+  {
+    "name":"グランドエスケープ",
+    "audio_url":"./audios/グランドエスケープ.mp3",
+    "singer":"三浦透子 / RADWIMPS",
+    "album": "天気の子",
+    "cover": "./MV/グランドエスケープ.jpg",
+    "time": "05:38",
+    "like":"#b3b0b0"
+  },
+  {
+    "name":"エウテルペ",
+    "audio_url":"./audios/エウテルペ.mp3",
+    "singer":"EGOIST",
+    "album": "Alter Ego",
+    "cover": "./MV/エウテルペ.jpg",
+    "time": "03:47",
+    "like":"#b3b0b0"
+  },
+  {
+    "name":"Infected",
+    "audio_url":"./audios/Infected.mp3",
+    "singer":"Starset",
+    "album":"Infected",
+    "cover":"./MV/Infected.jpg",
+    "time":"03:37",
+    "like":"#b3b0b0"
+  },
+
+  {
+    "name":"Unbecoming",
+    "audio_url":"./audios/Unbecoming.mp3",
+    "singer":"Starset",
+    "album":"Unbecoming",
+    "cover":"./MV/Unbecoming.jpg",
+    "time":"03:48",
+    "like":"#b3b0b0"
+  },
+
+  {
+    "name":"Monster",
+    "audio_url":"./audios/Monster.mp3",
+    "singer":"Starset",
+    "album":"Monster",
+    "cover":"./MV/Monster.jpg",
+    "time":"03:03",
+    "like":"#b3b0b0"
+  },
+
+  {
+    "name":"Telescope",
+    "audio_url":"./audios/Telescope.mp3",
+    "singer":"Starset",
+    "album":"Telescope",
+    "cover":"./MV/Telescope.jpg",
+    "time":"03:48",
+    "like":"#b3b0b0"
+  },
+
+  {
+    "name":"The Everlasting Guilty Crown",
+    "audio_url":"./audios/The Everlasting Guilty Crown.mp3",
+    "singer":"EGOIST",
+    "album":"The Everlasting Guilty Crown",
+    "cover":"./MV/The Everlasting Guilty Crown.jpg",
+    "time":"01:33",
+    "like":"#b3b0b0"
+  },
+
+  {
+    "name":"不问天",
+    "audio_url":"./audios/不问天.mp3",
+    "singer":"papaw泡泡",
+    "album":"不问天",
+    "cover":"./MV/不问天.jpg",
+    "time":"04:13",
+    "like":"#b3b0b0"
+  },
+  
+  {
+    "name":"时光盲盒",
+    "audio_url":"./audios/时光盲盒.mp3",
+    "singer":"ChiliChill",
+    "album":"时光盲盒",
+    "cover":"./MV/时光盲盒.jpg",
+    "time":"04:46",
+    "like":"#b3b0b0"
+  },
+
+  {
+    "name":"Glimmer",
+    "audio_url":"./audios/Glimmer.mp3",
+    "singer":"祈Inory",
+    "album":"Nano Core",
+    "cover":"./MV/Glimmer.jpg",
+    "time":"01:37",
+    "like":"#b3b0b0"
+  },
+
+  {
+    "name":"午夜の待ち合わせ",
+    "audio_url":"./audios/午夜の待ち合わせ.mp3",
+    "singer":"Hello Sleepwalkers",
+    "album":"野良神",
+    "cover":"./MV/午夜の待ち合わせ.jpg",
+    "time":"01:31",
+    "like":"#b3b0b0"
+  },
+  {
+    "name":"狂乱 Hey Kids!!!",
+    "audio_url":"./audios/狂乱 Hey Kids!!!.mp3",
+    "singer":"THE ORAL CIGARETTES",
+    "album":"狂乱 Hey Kids!!!",
+    "cover":"./MV/狂乱 Hey Kids!!!.jpg",
+    "time":"01:32",
+    "like":"#b3b0b0"
   }
+
 ]

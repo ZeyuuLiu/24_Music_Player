@@ -99,6 +99,7 @@ $("#nextBtn").on("click", function () {
   $("#playBtn").trigger("click");
 });
 
+
 // 给音乐列表绑定点击事件
 $("#openModal").on("click", function () {
   $(".modal").show();
@@ -154,6 +155,7 @@ $(".music-list").on("click", ".play-circle", function () {
     $("#playBtn").trigger("click");
   }
 });
+
 // 通过事件委托给喜欢列表的播放按钮绑定点击事件
 $(".like-list").on("click", ".play-circle", function () {
   if ($(this).hasClass("fa-play-circle")) {
@@ -194,7 +196,7 @@ function renderMusicList(list) {
   $.each(list, function (index, item) {
     var $li = $(`
       <li class="${index == currentIndex ? "playing" : ""}">
-        <span>0${index + 1}. ${item.name} - ${item.singer}</span>
+        <span>${index + 1}. ${item.name} - ${item.singer}</span>
         <span data-index="${index}" class="fa ${
       index == currentIndex && !$("audio").get(0).paused
         ? "fa-pause-circle"
