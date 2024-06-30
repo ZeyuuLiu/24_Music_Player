@@ -23,7 +23,7 @@
 ## 安装与使用
 
 - **克隆仓库**：
-   git clone https://github.com/ZeyuuLiu/24--
+   git clone (https://github.com/ZeyuuLiu/24_Music_Player)
    
 - **打开index.html**：
    使用浏览器打开index.html即可使用音乐播放器
