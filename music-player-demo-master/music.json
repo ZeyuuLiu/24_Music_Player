@@ -6,7 +6,8 @@
     "album": "打上花火 (初回限定盤)",
     "cover": "./MV/打上花火.jpg",
     "time": "04:49",
-    "like":"#b3b0b0"
+    "like":"#b3b0b0",
+    "video":"./MV/打上花火.mp4"
   },
   {
     "name":"前前前世",
@@ -15,7 +16,8 @@
     "album": "君の名は",
     "cover": "./MV/前前前世.jpg",
     "time": "04:52",
-    "like":"#b3b0b0"
+    "like":"#b3b0b0",
+    "video":"./MV/前前前世.mp4"
   },
   {
     "name":"Rain",
@@ -24,7 +26,8 @@
     "album": "言ノ葉",
     "cover": "./MV/言叶之庭.jpg",
     "time": "04:31",
-    "like":"#b3b0b0"
+    "like":"#b3b0b0",
+    "video":"./MV/言叶之庭.mp4"
   },
   {
     "name":"Bad Apple",
@@ -33,7 +36,8 @@
     "album": "Lovelight",
     "cover": "./MV/Bad Apple.jpg",
     "time": "03:39",
-    "like":"#b3b0b0"
+    "like":"#b3b0b0",
+    "video":"./MV/Bad Apple.mp4"
   },
   {
     "name":"COLORs",
@@ -42,7 +46,8 @@
     "album": "WIT STUDIO",
     "cover": "./MV/Colors.jpg",
     "time": "03:06",
-    "like":"#b3b0b0"
+    "like":"#b3b0b0",
+    "video": "./MV/Colors.mp4"
   },
   {
     "name":"LOSER",
@@ -51,7 +56,8 @@
     "album": "LOSER / ナンバーナイン",
     "cover": "./MV/LOSER.jpg",
     "time": "04:02",
-    "like":"#b3b0b0"
+    "like":"#b3b0b0",
+    "video":"./MV/LOSER.mp4"
   },
   {
     "name":"One Last Kiss",
@@ -60,7 +66,8 @@
     "album": "One Last Kiss",
     "cover": "./MV/One Last Kiss.jpg",
     "time": "04:12",
-    "like":"#b3b0b0"
+    "like":"#b3b0b0",
+    "video":"./MV/One Last Kiss.mp4"
   },
   {
     "name":"YOKU",
@@ -69,7 +76,8 @@
     "album": "廻人",
     "cover": "./MV/YOKU.jpg",
     "time": "02:46",
-    "like":"#b3b0b0"
+    "like":"#b3b0b0",
+    "video":"./MV/YOKU.mp4"
   },
   {
     "name":"グランドエスケープ",
@@ -78,7 +86,8 @@
     "album": "天気の子",
     "cover": "./MV/グランドエスケープ.jpg",
     "time": "05:38",
-    "like":"#b3b0b0"
+    "like":"#b3b0b0",
+    "video":"./MV/グランドエスケープ.mp4"
   },
   {
     "name":"エウテルペ",
@@ -87,7 +96,8 @@
     "album": "Alter Ego",
     "cover": "./MV/エウテルペ.jpg",
     "time": "03:47",
-    "like":"#b3b0b0"
+    "like":"#b3b0b0",
+    "video":"./MV/罪恶王冠.mp4"
   },
   {
     "name":"Infected",
@@ -96,7 +106,8 @@
     "album":"Infected",
     "cover":"./MV/Infected.jpg",
     "time":"03:37",
-    "like":"#b3b0b0"
+    "like":"#b3b0b0",
+    "video":"./MV/Infected.mp4"
   },
 
   {
@@ -106,7 +117,8 @@
     "album":"Unbecoming",
     "cover":"./MV/Unbecoming.jpg",
     "time":"03:48",
-    "like":"#b3b0b0"
+    "like":"#b3b0b0",
+    "video":"./MV/Unbecoming.mp4"
   },
 
   {
@@ -116,7 +128,8 @@
     "album":"Monster",
     "cover":"./MV/Monster.jpg",
     "time":"03:03",
-    "like":"#b3b0b0"
+    "like":"#b3b0b0",
+    "video":"./MV/Monster.mp4"
   },
 
   {
@@ -126,7 +139,8 @@
     "album":"Telescope",
     "cover":"./MV/Telescope.jpg",
     "time":"03:48",
-    "like":"#b3b0b0"
+    "like":"#b3b0b0",
+    "video": "./MV/Telescope.mp4"
   },
 
   {
@@ -136,7 +150,8 @@
     "album":"The Everlasting Guilty Crown",
     "cover":"./MV/The Everlasting Guilty Crown.jpg",
     "time":"01:33",
-    "like":"#b3b0b0"
+    "like":"#b3b0b0",
+    "video":"./MV/The Everlasting Guilty Crown.mp4"
   },
 
   {
@@ -146,7 +161,8 @@
     "album":"不问天",
     "cover":"./MV/不问天.jpg",
     "time":"04:13",
-    "like":"#b3b0b0"
+    "like":"#b3b0b0",
+    "video":"./MV/不问天.mp4"
   },
   
   {
@@ -156,7 +172,8 @@
     "album":"时光盲盒",
     "cover":"./MV/时光盲盒.jpg",
     "time":"04:46",
-    "like":"#b3b0b0"
+    "like":"#b3b0b0",
+    "video": "./MV/时光盲盒.mp4"
   },
 
   {
@@ -166,7 +183,8 @@
     "album":"Nano Core",
     "cover":"./MV/Glimmer.jpg",
     "time":"01:37",
-    "like":"#b3b0b0"
+    "like":"#b3b0b0",
+    "video":"./MV/Glimmer.mp4"
   },
 
   {
@@ -176,7 +194,8 @@
     "album":"野良神",
     "cover":"./MV/午夜の待ち合わせ.jpg",
     "time":"01:31",
-    "like":"#b3b0b0"
+    "like":"#b3b0b0",
+    "video":"./MV/午夜の待ち合わせ.mp4"
   },
   {
     "name":"狂乱 Hey Kids!!!",
@@ -185,7 +204,8 @@
     "album":"狂乱 Hey Kids!!!",
     "cover":"./MV/狂乱 Hey Kids!!!.jpg",
     "time":"01:32",
-    "like":"#b3b0b0"
+    "like":"#b3b0b0",
+    "video":"./MV/狂乱 Hey Kids!!!.mp4"
   }
 
 ]

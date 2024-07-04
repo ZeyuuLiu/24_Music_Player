@@ -302,6 +302,25 @@ input[type="checkbox"]:checked:active + span::after {
     padding: 0;  
     margin: 0;
 }
+.like-list li{
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(186, 182, 182);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    border-radius: 15px;
+    font-size: 13px;
+}
+.like-list li:hover,.like-list li:focus{
+    font-size: 16px;
+    color: var(--color-hover);
+    background-image:radial-gradient(var(--color-background-second),var(--color-background-first))
+}
+  .list-empty{
+    font-size: 40px;
+    padding: 0;
+}
 .playing,.notplaying {
     padding: 10px 0;
     border-bottom: 1px solid rgb(186, 182, 182);
